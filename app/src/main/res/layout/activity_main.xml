@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="mbk.io.alarm.MainActivity"
+
+    >
+
+    <Button
+        android:id="@+id/Clock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="#673AB7"
+        android:text="Clock"
+        android:textSize="34dp" />
+
+    <Button
+        android:id="@+id/Stopwatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="#673AB7"
+        android:text="Stopwatch"
+        android:textSize="34dp" />
+
+    <Button
+        android:id="@+id/Timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="#673AB7"
+        android:text="Timer"
+        android:textSize="34dp" />
+
+</LinearLayout>
