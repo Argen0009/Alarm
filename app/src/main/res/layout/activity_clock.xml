@@ -1,18 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
     tools:context=".ClockActivity">
 
-
-    <TextClock
-        android:id="@+id/textClock"
+    <TextView
+        android:id="@+id/textViewTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:format12Hour="hh:mm:ss a"
-        android:textSize="50sp" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/time"
+        android:textSize="20sp" />
 
-</LinearLayout>
+    <TimePicker
+        android:id="@+id/timerPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        tools:ignore="UnknownId" />
+
+    <Button
+        android:id="@+id/btnSetAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timerPicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16sp"
+        android:text="сохранить" />
+
+    <Button
+        android:id="@+id/btnCancelAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSetAlarm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16sp"
+        android:text="отменить"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Alarm</string>
+    <string name="time">Выберите время</string>
 </resources>
